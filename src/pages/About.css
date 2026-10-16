@@ -1,0 +1,278 @@
+.about-page {
+  color: #17324d;
+  background: #fff;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 105px 24px;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(246, 135, 25, 0.22), transparent 30%),
+    linear-gradient(125deg, #032e60, #043f7f 70%, #07569b);
+  color: white;
+}
+
+.about-hero-content {
+  width: min(1050px, 100%);
+  margin: auto;
+}
+
+.about-eyebrow,
+.about-intro-label > span,
+.about-section-heading > span,
+.about-bottom-cta > span {
+  color: #f68719;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.about-hero h1 {
+  max-width: 800px;
+  margin: 20px 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.12;
+}
+
+.about-hero h1 span,
+.about-intro-label h2 span {
+  color: #f68719;
+}
+
+.about-hero-content > p {
+  max-width: 620px;
+  margin-bottom: 30px;
+  color: #e5edf7;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.about-cta {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: #f68719;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.about-cta:hover {
+  background: #e8750a;
+  transform: translateY(-2px);
+}
+
+/* Intro / Story Section */
+.about-intro {
+  padding: 85px 24px;
+}
+
+.about-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  width: min(1100px, 100%);
+  margin: auto;
+}
+
+.about-intro-label h2 {
+  margin: 15px 0;
+  color: #043f7f;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+}
+
+.about-intro-text p {
+  margin: 0 0 18px;
+  color: #627387;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Mission & Vision Section */
+.about-mission-vision {
+  padding: 70px 24px;
+  background: #f5f8fc;
+}
+
+.about-mv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: min(1100px, 100%);
+  margin: auto;
+}
+
+.about-mv-card.mission-card {
+  border-left: 4px solid #f68719;
+}
+
+.about-mv-card.vision-card {
+  border-left: 4px solid #043f7f;
+}
+
+/* What We Do / Services */
+.about-services {
+  padding: 85px 24px;
+}
+
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  width: min(900px, 100%);
+  margin: auto;
+}
+
+.about-service-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1px solid rgba(4, 63, 127, 0.08);
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.about-service-item span {
+  color: #043f7f;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.service-check-icon {
+  color: #f68719;
+  flex-shrink: 0;
+}
+
+/* Features Grid / Values */
+.about-values {
+  padding: 80px 24px;
+  background: #f5f8fc;
+}
+
+.about-section-heading {
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.about-section-heading h2 {
+  margin: 12px 0;
+  color: #043f7f;
+  font-size: clamp(32px, 4vw, 44px);
+}
+
+.about-section-heading p {
+  color: #627387;
+  line-height: 1.7;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: min(1200px, 100%);
+  margin: auto;
+}
+
+.about-feature-card {
+  padding: 28px 22px;
+  border: 1px solid rgba(4, 63, 127, 0.08);
+  border-radius: 15px;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(4, 63, 127, 0.08);
+}
+
+.about-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  background: #fff0e0;
+  color: #f68719;
+}
+
+.about-feature-card h3 {
+  color: #043f7f;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-feature-card p {
+  color: #627387;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Bottom CTA */
+.about-bottom-cta {
+  padding: 75px 24px;
+  background: #043f7f;
+  color: #fff;
+  text-align: center;
+}
+
+.about-bottom-cta h2 {
+  margin: 15px 0;
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.about-bottom-cta p {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  color: #e0ebf8;
+  line-height: 1.8;
+}
+
+.about-quote-motto {
+  font-style: italic;
+  color: #f68719 !important;
+  font-weight: 600;
+  margin-bottom: 28px !important;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .about-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-hero {
+    padding: 75px 22px;
+  }
+
+  .about-hero-content > p {
+    font-size: 15px;
+  }
+
+  .about-intro,
+  .about-values,
+  .about-services,
+  .about-mission-vision {
+    padding: 55px 20px;
+  }
+
+  .about-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-bottom-cta {
+    padding: 55px 20px;
+  }
+}

@@ -1,0 +1,42 @@
+.handpicked-packages {
+  max-width: 1200px; margin: 0 auto; padding: 5rem 2rem 6rem;
+  text-align: center;
+}
+.home-section-kicker {
+  display: inline-block; margin-bottom: .8rem; padding: .4rem 1.2rem;
+  border-radius: 20px; background: #fff2e8; color: #f37021;
+  font-size: .75rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+}
+.handpicked-packages > h2 {
+  margin: 0 0 3.5rem; color: #084c8d; font-size: 2.8rem; font-weight: 800;
+}
+.handpicked-packages__grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem; justify-content: center;
+}
+.package-arch-card {
+  position: relative; display: block; width: 100%; height: 480px; padding: 0;
+  overflow: hidden; border: 1px solid #e2e8f0; border-radius: 160px 160px 24px 24px;
+  background: #fff; box-shadow: 0 15px 35px rgba(8,76,141,.08);
+  cursor: pointer; transition: transform .35s ease, box-shadow .35s ease; text-align: center;
+}
+.package-arch-card:hover { transform: translateY(-8px); box-shadow: 0 22px 45px rgba(8,76,141,.18); }
+.package-arch-card > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.package-arch-card__details {
+  position: absolute; right: 0; bottom: -1px; left: 0; padding: 1.8rem 1.2rem 1.2rem;
+  border-radius: 120px 120px 0 0; background: #fff;
+  box-shadow: 0 -10px 25px rgba(8,76,141,.06);
+}
+.package-arch-card__stars { margin-bottom: .3rem; color: #f37021; font-size: 1.1rem; }
+.package-arch-card__category {
+  display: inline-block; margin-bottom: .5rem; padding: .2rem .8rem;
+  border-radius: 12px; background: #e6f4fb; color: #084c8d;
+  font-size: .7rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+}
+.package-arch-card h3 { margin: 0 0 .4rem; color: #084c8d; font-size: 1.6rem; font-weight: 700; }
+.package-arch-card__details p { margin: 0; color: #f37021; font-size: .95rem; font-weight: 700; }
+@media (max-width: 600px) {
+  .handpicked-packages { padding: 3.5rem 1.2rem 4rem; }
+  .handpicked-packages > h2 { font-size: 2rem; margin-bottom: 2rem; }
+  .package-arch-card { height: 430px; }
+}

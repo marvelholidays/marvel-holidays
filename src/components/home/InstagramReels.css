@@ -1,0 +1,110 @@
+.home-instagram {
+  padding: 5rem 1.5rem;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.home-instagram__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-instagram__header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.home-instagram__kicker {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  background: #fff0f5;
+  color: #e1306c;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-instagram__header h2 {
+  margin: 0 0 0.5rem;
+  color: #084c8d;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.home-instagram__header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* Masonry Layout */
+.home-instagram__masonry {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.masonry-item {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f8fafc;
+  box-shadow: 0 8px 24px rgba(8, 76, 141, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(8, 76, 141, 0.18);
+}
+
+.instagram-embed-frame {
+  width: 100%;
+  height: 480px;
+  border: none;
+  display: block;
+}
+
+/* Follow Button */
+.home-instagram__follow {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.home-instagram__follow a {
+  display: inline-block;
+  padding: 0.85rem 2.4rem;
+  border-radius: 30px;
+  background: #f37021;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(243, 112, 33, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-instagram__follow a:hover {
+  background: #d95d12;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .home-instagram__masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .home-instagram__masonry {
+    grid-template-columns: 1fr;
+  }
+  .instagram-embed-frame {
+    height: 450px;
+  }
+}

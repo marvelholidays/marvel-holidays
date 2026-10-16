@@ -1,0 +1,9 @@
+/* Shared styles used by all home page sections */
+.marvel-home {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f4f8fb;
+  color: #084c8d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.marvel-home *, .marvel-home *::before, .marvel-home *::after { box-sizing: border-box; }
