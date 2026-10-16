@@ -106,7 +106,7 @@ export default function Header() {
 
         {/* Quote Button */}
         <div className="navbar-quote-wrapper">
-          <Link to="/contact" className="navbar-quote">
+          <Link to="/quote" className="navbar-quote">
             Get a Quote
           </Link>
         </div>
