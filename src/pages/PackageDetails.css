@@ -1,0 +1,259 @@
+/* Container & Base Styles */
+.package-details-page {
+  background-color: #faf9f6;
+  color: #0b4284;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/* Fallback View */
+.fallback-container {
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.fallback-text {
+  color: #64748b;
+}
+
+.fallback-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.8rem;
+  background-color: #f37021;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-banner {
+  position: relative;
+  height: 50vh;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.back-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(6px);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #f37021;
+  color: #ffffff;
+  padding: 0.3rem 0.9rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.hero-subtext {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Layout Container */
+.content-grid {
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tabs */
+.tabs-navigation {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+  color: #f37021;
+  border-bottom-color: #f37021;
+}
+
+/* Tab Contents */
+.section-title {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.overview-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #334155;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.itinerary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.itinerary-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-left: 4px solid #f37021;
+}
+
+.itinerary-day {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #f37021;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.itinerary-card-title {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0.5rem 0;
+  color: #0f172a;
+}
+
+.itinerary-details {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+.inclusions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inclusion-item {
+  padding: 0.8rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.check-mark {
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Sidebar Booking Card */
+.booking-card {
+  position: sticky;
+  top: 2rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.starting-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.price-display {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0b4284;
+  margin: 0.2rem 0 1rem 0;
+}
+
+.price-unit {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f37021;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 6px 18px rgba(243, 112, 33, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #d95d12;
+}
+
+.booking-disclaimer {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
