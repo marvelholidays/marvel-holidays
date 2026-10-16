@@ -1,0 +1,100 @@
+/* Container & Base Layout */
+.terms-page {
+  background-color: #faf9f6;
+  color: #0b4284;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.terms-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.terms-header {
+  border-bottom: 2px solid #ffe0ce;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.terms-title {
+  font-size: 2.2rem;
+  color: #012d63;
+  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+}
+
+.terms-subtitle {
+  color: #f68719;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Content Body */
+.terms-content {
+  line-height: 1.7;
+  color: #334155;
+  font-size: 0.98rem;
+}
+
+.terms-intro {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+.terms-section {
+  margin-bottom: 1.8rem;
+}
+
+.terms-section-title {
+  color: #012d63;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.terms-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.terms-info-p {
+  margin: 0 0 0.4rem 0;
+}
+
+/* Support Box */
+.terms-support-box {
+  background-color: #fff5eb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border-left: 4px solid #f68719;
+  margin-top: 1rem;
+}
+
+.terms-company-name {
+  margin: 0 0 0.4rem 0;
+  font-weight: 700;
+  color: #012d63;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .terms-card {
+    padding: 1.5rem;
+  }
+
+  .terms-title {
+    font-size: 1.75rem;
+  }
+
+  .terms-section-title {
+    font-size: 1.15rem;
+  }
+}

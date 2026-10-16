@@ -1,0 +1,99 @@
+/* Container & Base Layout */
+.privacy-page {
+  background-color: #faf9f6;
+  color: #0b4284;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.privacy-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.privacy-header {
+  border-bottom: 2px solid #ffe0ce;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-title {
+  font-size: 2.2rem;
+  color: #012d63;
+  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+}
+
+.privacy-subtitle {
+  color: #f68719;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Content Body */
+.privacy-content {
+  line-height: 1.7;
+  color: #334155;
+  font-size: 0.98rem;
+}
+
+.privacy-section {
+  margin-bottom: 1.8rem;
+}
+
+.privacy-section-title {
+  color: #012d63;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.privacy-subheading {
+  font-weight: 700;
+  color: #0b4284;
+  margin: 0.8rem 0 0.3rem 0;
+}
+
+.privacy-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.privacy-info-p {
+  margin: 0 0 0.4rem 0;
+}
+
+/* Callout Boxes */
+.privacy-contact-box {
+  background-color: #fff5eb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border-left: 4px solid #f68719;
+}
+
+.privacy-company-name {
+  margin: 0 0 0.4rem 0;
+  font-weight: 700;
+  color: #012d63;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .privacy-card {
+    padding: 1.5rem;
+  }
+
+  .privacy-title {
+    font-size: 1.75rem;
+  }
+
+  .privacy-section-title {
+    font-size: 1.15rem;
+  }
+}
