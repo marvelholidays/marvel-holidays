@@ -4,8 +4,8 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 // 1. Supabase Initialization
-const SUPABASE_URL = "https://nnzhsnnqutklvsgnqtbw.supabase.co";
-const SUPABASE_KEY = "sb_publishable_8qrjH62JFCiEfaKj3RYIyA_1GeGNyA3";
+const SUPABASE_URL = "https://aykroeczwleemzoprquq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_XXmItakChfRx_IW4FTqtnw_Hmvzc0NU";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const Contact = () => {
