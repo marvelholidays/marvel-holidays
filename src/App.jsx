@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Holidays from './pages/Holidays';
@@ -13,10 +14,11 @@ import Visa from './pages/Visa';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 
-
 export default function App() {
   return (
     <Router>
+      {/* Resets scroll position to top whenever route changes */}
+      <ScrollToTop />
       <div className="app-container">
         <Header />
         <main>
@@ -30,7 +32,6 @@ export default function App() {
             <Route path="/visa" element={<Visa />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-
           </Routes>
         </main>
       </div>
