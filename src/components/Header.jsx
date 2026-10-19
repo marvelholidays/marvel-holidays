@@ -4,6 +4,7 @@ import './Header.css';
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,13 +28,15 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Close dropdown on route change
+  // Close menus on route change
   useEffect(() => {
     setDropdownOpen(false);
+    setMobileMenuOpen(false);
   }, [location.pathname]);
 
   const handleCategorySelect = (slug) => {
     setDropdownOpen(false);
+    setMobileMenuOpen(false);
     if (slug === 'Customized') {
       navigate('/contact');
     } else {
@@ -51,8 +54,18 @@ export default function Header() {
           <span className="brand-holidays">HOLIDAYS</span>
         </Link>
 
+        {/* Mobile Hamburger Button */}
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation menu"
+        >
+          {mobileMenuOpen ? '✕' : '☰'}
+        </button>
+
         {/* Navigation Links */}
-        <nav className="navbar-links" aria-label="Main navigation">
+        <nav className={`navbar-links ${mobileMenuOpen ? 'mobile-open' : ''}`} aria-label="Main navigation">
           <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Home
           </NavLink>
@@ -78,7 +91,7 @@ export default function Header() {
               </span>
             </button>
 
-            {/* Always kept in DOM for CSS transitions */}
+            {/* Dropdown Menu */}
             <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
               <div className="dropdown-heading">Select Category</div>
               {categories.map((cat) => (
@@ -102,9 +115,13 @@ export default function Header() {
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Contact Us
           </NavLink>
+
+          <Link to="/quote" className="navbar-quote mobile-quote-btn">
+            Get a Quote
+          </Link>
         </nav>
 
-        {/* Quote Button */}
+        {/* Quote Button (Desktop) */}
         <div className="navbar-quote-wrapper">
           <Link to="/quote" className="navbar-quote">
             Get a Quote

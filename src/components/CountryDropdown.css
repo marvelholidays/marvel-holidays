@@ -1,0 +1,125 @@
+.country-search-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 2.5rem auto;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.country-search-input-container {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 6px 8px 6px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-search-input-container:focus-within {
+  border-color: #f68719;
+  box-shadow: 0 6px 24px rgba(246, 135, 25, 0.15);
+}
+
+.country-search-icon {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #012d63;
+}
+
+.country-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  color: #012d63;
+  font-weight: 500;
+  background: transparent;
+}
+
+.country-search-input::placeholder {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.country-search-btn {
+  background: #f68719;
+  color: #ffffff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.country-search-btn:hover {
+  background: #e8750a;
+  transform: scale(1.05);
+}
+
+/* DROPDOWN MENU */
+.country-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  max-height: 220px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #f1f5f9;
+}
+
+.country-dropdown-item {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  color: #0b4284;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.country-dropdown-item:hover,
+.country-dropdown-item.selected {
+  background-color: #e2e8f0;
+  color: #012d63;
+}
+
+.country-dropdown-empty {
+  padding: 14px 24px;
+  font-size: 0.9rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Scrollbar styling */
+.country-dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.country-dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 0 12px 12px 0;
+}
+
+.country-dropdown-menu::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.country-dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

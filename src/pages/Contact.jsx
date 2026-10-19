@@ -227,6 +227,7 @@ const Contact = () => {
                 <option>Honeymoon</option>
                 <option>Family Trip</option>
                 <option>Customized Trip</option>
+                <option>Visa Enquiry</option>
                 <option>Not Decided Yet</option>
               </select>
             </label>

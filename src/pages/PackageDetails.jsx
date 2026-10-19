@@ -56,7 +56,7 @@ export default function PackageDetails() {
           </h1>
 
           <p className="hero-subtext">
-            📍 {pkg.destination} | ⏱️ {pkg.duration} | ⭐ {pkg.rating} / 5
+            📍 {pkg.destination} | ⏱️ {pkg.duration} | ⭐ {pkg.rating || 5} / 5
           </p>
         </div>
       </div>
@@ -84,8 +84,21 @@ export default function PackageDetails() {
             <div>
               <h2 className="section-title">Package Overview</h2>
               <p className="overview-text">
-                {pkg.overview}
+                {pkg.overview || pkg.description}
               </p>
+
+              {pkg.highlights && pkg.highlights.length > 0 && (
+                <div style={{ marginTop: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.1rem', color: '#012d63', marginBottom: '0.8rem' }}>Highlights</h3>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    {pkg.highlights.map((highlight, idx) => (
+                      <span key={idx} style={{ background: '#fff5eb', color: '#f68719', fontWeight: '600', padding: '6px 14px', borderRadius: '20px', fontSize: '0.88rem', border: '1px solid #ffe0ce' }}>
+                        ✨ {highlight}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -99,25 +112,40 @@ export default function PackageDetails() {
                     {item.day}
                   </span>
                   <h3 className="itinerary-card-title">{item.title}</h3>
-                  <p className="itinerary-details">
-                    {item.details}
-                  </p>
+                  {item.details && (
+                    <p className="itinerary-details">
+                      {item.details}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
           )}
 
-          {/* INCLUSIONS TAB */}
+          {/* INCLUSIONS & EXCLUSIONS TAB */}
           {activeTab === 'inclusions' && (
             <div>
               <h2 className="section-title">What's Included</h2>
               <ul className="inclusions-list">
                 {pkg.inclusions?.map((inc, index) => (
                   <li key={index} className="inclusion-item">
-                    <span className="check-mark">✓</span> {inc}
+                    <span className="check-mark" style={{ color: '#25d366', fontWeight: 'bold', marginRight: '8px' }}>✓</span> {inc}
                   </li>
                 ))}
               </ul>
+
+              {pkg.exclusions && pkg.exclusions.length > 0 && (
+                <div style={{ marginTop: '2rem' }}>
+                  <h2 className="section-title">What's Excluded</h2>
+                  <ul className="inclusions-list">
+                    {pkg.exclusions.map((exc, index) => (
+                      <li key={index} className="inclusion-item" style={{ color: '#64748b' }}>
+                        <span style={{ color: '#ef4444', fontWeight: 'bold', marginRight: '8px' }}>✕</span> {exc}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           )}
         </div>
