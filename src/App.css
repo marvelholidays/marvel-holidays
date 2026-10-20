@@ -1,7 +1,7 @@
 /* FLOATING WHATSAPP BUTTON */
 .whatsapp-float-btn {
   position: fixed;
-  bottom: 25px;
+  bottom: 85px; /* Lifted high enough so footer links (Privacy Policy & Terms) are never overlapped */
   right: 25px;
   background-color: #25d366;
   color: #ffffff;
@@ -22,4 +22,14 @@
   transform: scale(1.06);
   box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5);
   color: #ffffff;
+}
+
+/* Mobile Screen Adjustment */
+@media (max-width: 768px) {
+  .whatsapp-float-btn {
+    bottom: 75px; /* Clears footer links on smaller mobile devices */
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
 }
