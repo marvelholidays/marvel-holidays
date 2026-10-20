@@ -4,6 +4,7 @@ import './App.css';
 
 import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
+import DraggableWhatsApp from './components/DraggableWhatsApp';
 import Home from './pages/Home';
 import Holidays from './pages/Holidays';
 import PackageDetails from './pages/PackageDetails';
@@ -34,18 +35,10 @@ export default function App() {
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           </Routes>
         </main>
+        {/* Draggable WhatsApp Conversion Widget */}
+        <DraggableWhatsApp />
 
 
-        {/* Floating WhatsApp Conversion Widget */}
-        <a
-          href="https://wa.me/917824887999?text=Hi%20Marvel%20Holidays,%20I'd%20like%20to%20plan%20a%20trip!"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whatsapp-float-btn"
-          title="Chat with Travel Expert"
-        >
-          💬 Chat with Us
-        </a>
       </div>
     </Router>
   );
