@@ -22,8 +22,9 @@ export default function HomeFooter() {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/holidays">Holiday Packages</Link></li>
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/holidays">Holiday Packages</Link></li>
+              <li><Link to="/visa">Visa</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
